@@ -27,7 +27,7 @@ fi
 echo "启动新容器..."
 docker run -d \
     --name $APP_NAME \
-    -p 80:80 \
+    -p 5173:5173 \
     --restart unless-stopped \
     $IMAGE_NAME:$IMAGE_TAG
 

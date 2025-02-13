@@ -34,6 +34,6 @@ COPY --from=builder --chown=appuser:appgroup /app/dist /usr/share/nginx/html
 # 使用非 root 用户运行
 USER appuser
 
-EXPOSE 80
+EXPOSE 5173
 
 CMD ["nginx", "-g", "daemon off;"]
