@@ -11,10 +11,10 @@ echo "开始构建 Docker 镜像..."
 docker build -t $IMAGE_NAME:$IMAGE_TAG .
 
 # 推送镜像到镜像仓库
-echo "推送镜像到仓库..."
-docker push $IMAGE_NAME:$IMAGE_TAG
-docker tag $IMAGE_NAME:$IMAGE_TAG $IMAGE_NAME:latest
-docker push $IMAGE_NAME:latest
+# echo "推送镜像到仓库..."
+# docker push $IMAGE_NAME:$IMAGE_TAG
+# docker tag $IMAGE_NAME:$IMAGE_TAG $IMAGE_NAME:latest
+# docker push $IMAGE_NAME:latest
 
 # 更新服务
 echo "更新服务..."
