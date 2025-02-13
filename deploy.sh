@@ -2,7 +2,7 @@
 
 # 配置变量
 APP_NAME="todo-app"
-REGISTRY="your-registry.com"
+REGISTRY="codehourra"
 IMAGE_NAME="$REGISTRY/$APP_NAME"
 IMAGE_TAG=$(git rev-parse --short HEAD)
 
