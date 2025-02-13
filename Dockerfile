@@ -13,6 +13,7 @@ RUN npm config set cache /tmp/npm-cache && \
 # 分层复制源代码，提高缓存利用率
 COPY tsconfig*.json ./
 COPY vite.config.ts ./
+COPY index.html ./
 COPY public ./public
 COPY src ./src
 
